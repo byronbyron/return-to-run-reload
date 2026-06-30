@@ -1,0 +1,1151 @@
+{
+  "version": "1.0",
+  "meta": {
+    "id": "btr-return-to-run-2026",
+    "athlete": "Byron Walker-Mills",
+    "event": "Return-to-Run Reload Block (post pubic symphysis)",
+    "eventDate": "2026-08-09",
+    "planStartDate": "2026-06-29",
+    "planEndDate": "2026-08-09",
+    "createdAt": "2026-06-30T14:46:39.619Z",
+    "updatedAt": "2026-06-30T14:46:39.619Z",
+    "totalWeeks": 6,
+    "generatedBy": "Claude Coach"
+  },
+  "preferences": {
+    "run": "kilometers",
+    "firstDayOfWeek": "monday"
+  },
+  "assessment": {
+    "foundation": {
+      "raceHistory": [
+        "Retford Half 1:21:09 (Mar 2026, PB)",
+        "Dewsbury 10K 36:51 (Feb 2026, PB)",
+        "Wombwell 5M 29:40 (Feb 2026, PB)",
+        "Loxley Lash 5K 18:20 (Jun 2026)"
+      ],
+      "peakTrainingLoad": 122,
+      "foundationLevel": "advanced",
+      "yearsInSport": 4
+    },
+    "currentForm": {
+      "weeklyVolume": {
+        "total": 6,
+        "run": 6
+      },
+      "longestSessions": {
+        "run": 30
+      },
+      "consistency": "High base (≈87 km/wk avg over 12 months, 4,538 km / 513 runs), broken by ~3-4 weeks of disrupted training in June around the symphysis injury and the RSR."
+    },
+    "strengths": [
+      {
+        "sport": "run",
+        "evidence": "Deep aerobic base: sustained 100-120 km weeks at 142-147 bpm; sub-19 5K off easy running."
+      }
+    ],
+    "limiters": [
+      {
+        "sport": "run",
+        "evidence": "Left adductor / pubic symphysis tissue tolerance lags cardiovascular readiness; no cross-training to offload it."
+      }
+    ],
+    "constraints": [
+      "Run only, no bike/pool to offload",
+      "Once-daily singles to start (normally ~9 runs/wk with doubles)",
+      "Pause football until running full volume pain-free"
+    ]
+  },
+  "zones": {
+    "run": {
+      "hr": {
+        "lthr": 177,
+        "zones": [
+          {
+            "zone": 1,
+            "name": "Recovery",
+            "percentLow": 0,
+            "percentHigh": 81,
+            "hrLow": 0,
+            "hrHigh": 143
+          },
+          {
+            "zone": 2,
+            "name": "Aerobic",
+            "percentLow": 81,
+            "percentHigh": 89,
+            "hrLow": 143,
+            "hrHigh": 157
+          },
+          {
+            "zone": 3,
+            "name": "Tempo",
+            "percentLow": 90,
+            "percentHigh": 93,
+            "hrLow": 159,
+            "hrHigh": 165
+          },
+          {
+            "zone": 4,
+            "name": "Sub-threshold",
+            "percentLow": 94,
+            "percentHigh": 99,
+            "hrLow": 166,
+            "hrHigh": 175
+          },
+          {
+            "zone": 5,
+            "name": "Threshold (5a)",
+            "percentLow": 100,
+            "percentHigh": 102,
+            "hrLow": 177,
+            "hrHigh": 181
+          }
+        ]
+      },
+      "pace": {
+        "note": "From VDOT ~56 (5K 18:20 / 10K 36:51 / HM 1:21:09). Only Easy is used until week 5.",
+        "easy": "4:50-5:15/km",
+        "marathon": "4:00/km",
+        "threshold": "3:48/km",
+        "interval": "3:30/km",
+        "repetition": "3:15/km"
+      }
+    }
+  },
+  "phases": [
+    {
+      "name": "Reintroduction",
+      "startWeek": 1,
+      "endWeek": 2,
+      "focus": "Clear DOMS, pass the 5K test, easy running only",
+      "weeklyHoursRange": {
+        "low": 2,
+        "high": 4
+      },
+      "keyWorkouts": [
+        "5K test run",
+        "Easy aerobic runs",
+        "Daily adductor isometrics"
+      ],
+      "physiologicalGoals": [
+        "Confirm symphysis tolerates easy load",
+        "Re-establish running rhythm without flaring tissue"
+      ]
+    },
+    {
+      "name": "Reload",
+      "startWeek": 3,
+      "endWeek": 4,
+      "focus": "Build easy volume, reintroduce strides, ease-week checkpoint",
+      "weeklyHoursRange": {
+        "low": 4,
+        "high": 6
+      },
+      "keyWorkouts": [
+        "Easy + strides",
+        "Long run to 14 km",
+        "Copenhagen adductor progression"
+      ],
+      "physiologicalGoals": [
+        "Rebuild tissue loading capacity",
+        "Restore neuromuscular snap via strides"
+      ]
+    },
+    {
+      "name": "Re-entry to quality",
+      "startWeek": 5,
+      "endWeek": 6,
+      "focus": "First threshold work (conditional), approach normal load",
+      "weeklyHoursRange": {
+        "low": 6,
+        "high": 8
+      },
+      "keyWorkouts": [
+        "Threshold 4x5min",
+        "Cruise 5x1km",
+        "Long run to 19 km"
+      ],
+      "physiologicalGoals": [
+        "Reintroduce speed safely",
+        "Return to ~85 km and a full session, ready to pick a race"
+      ]
+    }
+  ],
+  "weeks": [
+    {
+      "weekNumber": 1,
+      "startDate": "2026-06-29",
+      "endDate": "2026-07-05",
+      "phase": "Reintroduction",
+      "focus": "Clear DOMS, pass the 5K test, prove the tissue tolerates easy load. Volume deliberately tiny.",
+      "targetHours": 1.71,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-06-29",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w1-mon-0",
+              "completed": false,
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest",
+              "description": "Full rest, RSR recovery. Begin daily adductor isometrics today. Daily adductor isometrics: ball/fist between knees, 5x30s submaximal squeezes. Use these as your gauge: if a squeeze provokes more than a dull 2/10, the tissue is not ready to progress."
+            }
+          ]
+        },
+        {
+          "date": "2026-06-30",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w1-tue-0",
+              "completed": false,
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest",
+              "description": "Rest or 20-30 min flat walk. Daily adductor isometrics: ball/fist between knees, 5x30s submaximal squeezes. Use these as your gauge: if a squeeze provokes more than a dull 2/10, the tissue is not ready to progress."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w1-wed-0",
+              "completed": false,
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest",
+              "description": "Rest or 20-30 min flat walk. Daily adductor isometrics: ball/fist between knees, 5x30s submaximal squeezes. Use these as your gauge: if a squeeze provokes more than a dull 2/10, the tissue is not ready to progress."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-02",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w1-thu-0",
+              "completed": false,
+              "sport": "run",
+              "type": "test",
+              "name": "Easy 5 km test run",
+              "distanceMeters": 5000,
+              "durationMinutes": 28,
+              "primaryZone": "Z1 (very easy)",
+              "description": "THE GATE FOR THE WHOLE BLOCK. Only run this once DOMS has cleared (roughly day 4-5 post-RSR). Flat, even ground, very easy, ~5:30/km. Acceptable response: groin at or below 2/10 during, settling within 24h, no worse the next morning. If it flares above that, do not progress: rest, repeat, and consider physio review before continuing.",
+              "humanReadable": "5 km very easy on flat ground. This run decides whether the block starts. Judge it by the next morning, not just how it felt."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-03",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w1-fri-0",
+              "completed": false,
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest",
+              "description": "Rest and assess the test-run response (this is the important 24h window). Daily adductor isometrics: ball/fist between knees, 5x30s submaximal squeezes. Use these as your gauge: if a squeeze provokes more than a dull 2/10, the tissue is not ready to progress."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-04",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w1-sat-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 6 km",
+              "distanceMeters": 6000,
+              "durationMinutes": 32,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km). First run after the test; keep it boringly easy.",
+              "humanReadable": "6 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            },
+            {
+              "id": "w1-sat-1",
+              "completed": false,
+              "sport": "strength",
+              "type": "strength",
+              "name": "Strength (A)",
+              "durationMinutes": 30,
+              "primaryZone": "Strength",
+              "description": "Strength A (adductor-led): adductor isometric squeezes 5x30s (long and short lever) | glute bridges 3x12 | side-lying hip abduction 3x12/side | clamshells 3x15/side | dead bug 3x10. Pain-free only. The Copenhagen progression is the single most evidence-based lever for groin/adductor tolerance; load it gradually and never into pain.",
+              "humanReadable": "Strength A (adductor-led): adductor isometric squeezes 5x30s (long and short lever) | glute bridges 3x12 | side-lying hip abduction 3x12/side | clamshells 3x15/side | dead bug 3x10. Pain-free only."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-05",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w1-sun-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 8 km",
+              "distanceMeters": 8000,
+              "durationMinutes": 43,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km).",
+              "humanReadable": "8 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 1.71,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 1.71,
+            "km": 19
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 2,
+      "startDate": "2026-07-06",
+      "endDate": "2026-07-12",
+      "phase": "Reintroduction",
+      "focus": "Re-establish a daily-ish rhythm on easy running only. Still no quality, no hills.",
+      "targetHours": 3.6,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-07-06",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w2-mon-0",
+              "completed": false,
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest",
+              "description": "Full rest. Walking is fine. Daily adductor isometrics: ball/fist between knees, 5x30s submaximal squeezes. Use these as your gauge: if a squeeze provokes more than a dull 2/10, the tissue is not ready to progress."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-07",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w2-tue-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 7 km",
+              "distanceMeters": 7000,
+              "durationMinutes": 38,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km).",
+              "humanReadable": "7 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-08",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w2-wed-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 8 km",
+              "distanceMeters": 8000,
+              "durationMinutes": 43,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km).",
+              "humanReadable": "8 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-09",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w2-thu-0",
+              "completed": false,
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest",
+              "description": "Rest + "
+            },
+            {
+              "id": "w2-thu-1",
+              "completed": false,
+              "sport": "strength",
+              "type": "strength",
+              "name": "Strength (A)",
+              "durationMinutes": 30,
+              "primaryZone": "Strength",
+              "description": "Strength A (adductor-led): adductor isometric squeezes 5x30s (long and short lever) | glute bridges 3x12 | side-lying hip abduction 3x12/side | clamshells 3x15/side | dead bug 3x10. Pain-free only. The Copenhagen progression is the single most evidence-based lever for groin/adductor tolerance; load it gradually and never into pain.",
+              "humanReadable": "Strength A (adductor-led): adductor isometric squeezes 5x30s (long and short lever) | glute bridges 3x12 | side-lying hip abduction 3x12/side | clamshells 3x15/side | dead bug 3x10. Pain-free only."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-10",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w2-fri-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 7 km",
+              "distanceMeters": 7000,
+              "durationMinutes": 38,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km).",
+              "humanReadable": "7 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-11",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w2-sat-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 8 km",
+              "distanceMeters": 8000,
+              "durationMinutes": 43,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km).",
+              "humanReadable": "8 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            },
+            {
+              "id": "w2-sat-1",
+              "completed": false,
+              "sport": "strength",
+              "type": "strength",
+              "name": "Strength (A)",
+              "durationMinutes": 30,
+              "primaryZone": "Strength",
+              "description": "Strength A (adductor-led): adductor isometric squeezes 5x30s (long and short lever) | glute bridges 3x12 | side-lying hip abduction 3x12/side | clamshells 3x15/side | dead bug 3x10. Pain-free only. The Copenhagen progression is the single most evidence-based lever for groin/adductor tolerance; load it gradually and never into pain.",
+              "humanReadable": "Strength A (adductor-led): adductor isometric squeezes 5x30s (long and short lever) | glute bridges 3x12 | side-lying hip abduction 3x12/side | clamshells 3x15/side | dead bug 3x10. Pain-free only."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-12",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w2-sun-0",
+              "completed": false,
+              "sport": "run",
+              "type": "long",
+              "name": "Long run 10 km",
+              "distanceMeters": 10000,
+              "durationMinutes": 54,
+              "primaryZone": "Z2 (HR 143-157)",
+              "description": "Steady aerobic long run on flat, even ground. Keep it easy the whole way for now; no surges. This is the session that loads the tissue most, so it is the truest test of readiness.",
+              "humanReadable": "10 km easy long run, flat."
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 3.6,
+        "bySport": {
+          "run": {
+            "sessions": 5,
+            "hours": 3.6,
+            "km": 40
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 3,
+      "startDate": "2026-07-13",
+      "endDate": "2026-07-19",
+      "phase": "Reload",
+      "focus": "Build easy volume, reintroduce neuromuscular snap via strides. Still no tempo.",
+      "targetHours": 5.13,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-07-13",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w3-mon-0",
+              "completed": false,
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest",
+              "description": "Full rest. Walking is fine. Daily adductor isometrics: ball/fist between knees, 5x30s submaximal squeezes. Use these as your gauge: if a squeeze provokes more than a dull 2/10, the tissue is not ready to progress."
+            },
+            {
+              "id": "w3-mon-1",
+              "completed": false,
+              "sport": "strength",
+              "type": "strength",
+              "name": "Strength (B)",
+              "durationMinutes": 30,
+              "primaryZone": "Strength",
+              "description": "Strength B: short-lever Copenhagen adductor 3x6-8/side (top knee on bench, build slowly) | single-leg glute bridge 3x10/side | side plank 3x30s/side | bird-dog 3x10/side | calf raises 3x15. The Copenhagen progression is the single most evidence-based lever for groin/adductor tolerance; load it gradually and never into pain.",
+              "humanReadable": "Strength B: short-lever Copenhagen adductor 3x6-8/side (top knee on bench, build slowly) | single-leg glute bridge 3x10/side | side plank 3x30s/side | bird-dog 3x10/side | calf raises 3x15."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-14",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w3-tue-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 10 km + strides",
+              "distanceMeters": 10000,
+              "durationMinutes": 59,
+              "primaryZone": "Z1-2 + relaxed accelerations",
+              "description": "Flat easy running, then 6 x 20s relaxed strides on flat grass/track with full walk-back recovery. Strides are about smooth turnover, not sprinting. Skip the strides if the groin is talking.",
+              "humanReadable": "10 km easy + 6x20s strides (flat, full recovery)."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-15",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w3-wed-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 9 km",
+              "distanceMeters": 9000,
+              "durationMinutes": 49,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km).",
+              "humanReadable": "9 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-16",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w3-thu-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 10 km",
+              "distanceMeters": 10000,
+              "durationMinutes": 54,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km).",
+              "humanReadable": "10 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            },
+            {
+              "id": "w3-thu-1",
+              "completed": false,
+              "sport": "strength",
+              "type": "strength",
+              "name": "Strength (B)",
+              "durationMinutes": 30,
+              "primaryZone": "Strength",
+              "description": "Strength B: short-lever Copenhagen adductor 3x6-8/side (top knee on bench, build slowly) | single-leg glute bridge 3x10/side | side plank 3x30s/side | bird-dog 3x10/side | calf raises 3x15. The Copenhagen progression is the single most evidence-based lever for groin/adductor tolerance; load it gradually and never into pain.",
+              "humanReadable": "Strength B: short-lever Copenhagen adductor 3x6-8/side (top knee on bench, build slowly) | single-leg glute bridge 3x10/side | side plank 3x30s/side | bird-dog 3x10/side | calf raises 3x15."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-17",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w3-fri-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 6 km",
+              "distanceMeters": 6000,
+              "durationMinutes": 32,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km).",
+              "humanReadable": "6 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-18",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w3-sat-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 8 km + strides",
+              "distanceMeters": 8000,
+              "durationMinutes": 48,
+              "primaryZone": "Z1-2 + relaxed accelerations",
+              "description": "Flat easy running, then 6 x 20s relaxed strides on flat grass/track with full walk-back recovery. Strides are about smooth turnover, not sprinting. Skip the strides if the groin is talking.",
+              "humanReadable": "8 km easy + 6x20s strides (flat, full recovery)."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-19",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w3-sun-0",
+              "completed": false,
+              "sport": "run",
+              "type": "long",
+              "name": "Long run 14 km",
+              "distanceMeters": 14000,
+              "durationMinutes": 76,
+              "primaryZone": "Z2 (HR 143-157)",
+              "description": "Steady aerobic long run on flat, even ground. Keep it easy the whole way for now; no surges. This is the session that loads the tissue most, so it is the truest test of readiness.",
+              "humanReadable": "14 km easy long run, flat."
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.13,
+        "bySport": {
+          "run": {
+            "sessions": 6,
+            "hours": 5.13,
+            "km": 57
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 4,
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "phase": "Reload",
+      "focus": "Ease week and tissue checkpoint. Hold quality off, drop volume ~25%, see how the area has handled three weeks of building.",
+      "targetHours": 3.96,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2026-07-20",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w4-mon-0",
+              "completed": false,
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest",
+              "description": "Full rest. Walking is fine. Daily adductor isometrics: ball/fist between knees, 5x30s submaximal squeezes. Use these as your gauge: if a squeeze provokes more than a dull 2/10, the tissue is not ready to progress."
+            },
+            {
+              "id": "w4-mon-1",
+              "completed": false,
+              "sport": "strength",
+              "type": "strength",
+              "name": "Strength (B)",
+              "durationMinutes": 30,
+              "primaryZone": "Strength",
+              "description": "Strength B: short-lever Copenhagen adductor 3x6-8/side (top knee on bench, build slowly) | single-leg glute bridge 3x10/side | side plank 3x30s/side | bird-dog 3x10/side | calf raises 3x15. The Copenhagen progression is the single most evidence-based lever for groin/adductor tolerance; load it gradually and never into pain.",
+              "humanReadable": "Strength B: short-lever Copenhagen adductor 3x6-8/side (top knee on bench, build slowly) | single-leg glute bridge 3x10/side | side plank 3x30s/side | bird-dog 3x10/side | calf raises 3x15."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-21",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w4-tue-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 8 km + strides",
+              "distanceMeters": 8000,
+              "durationMinutes": 48,
+              "primaryZone": "Z1-2 + relaxed accelerations",
+              "description": "Flat easy running, then 6 x 20s relaxed strides on flat grass/track with full walk-back recovery. Strides are about smooth turnover, not sprinting. Skip the strides if the groin is talking.",
+              "humanReadable": "8 km easy + 6x20s strides (flat, full recovery)."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-22",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w4-wed-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 8 km",
+              "distanceMeters": 8000,
+              "durationMinutes": 43,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km).",
+              "humanReadable": "8 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-23",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w4-thu-0",
+              "completed": false,
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest",
+              "description": "Full rest. Walking is fine. Daily adductor isometrics: ball/fist between knees, 5x30s submaximal squeezes. Use these as your gauge: if a squeeze provokes more than a dull 2/10, the tissue is not ready to progress."
+            },
+            {
+              "id": "w4-thu-1",
+              "completed": false,
+              "sport": "strength",
+              "type": "strength",
+              "name": "Strength (B)",
+              "durationMinutes": 30,
+              "primaryZone": "Strength",
+              "description": "Strength B: short-lever Copenhagen adductor 3x6-8/side (top knee on bench, build slowly) | single-leg glute bridge 3x10/side | side plank 3x30s/side | bird-dog 3x10/side | calf raises 3x15. The Copenhagen progression is the single most evidence-based lever for groin/adductor tolerance; load it gradually and never into pain.",
+              "humanReadable": "Strength B: short-lever Copenhagen adductor 3x6-8/side (top knee on bench, build slowly) | single-leg glute bridge 3x10/side | side plank 3x30s/side | bird-dog 3x10/side | calf raises 3x15."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-24",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w4-fri-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 8 km",
+              "distanceMeters": 8000,
+              "durationMinutes": 43,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km).",
+              "humanReadable": "8 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-25",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w4-sat-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 8 km + strides",
+              "distanceMeters": 8000,
+              "durationMinutes": 48,
+              "primaryZone": "Z1-2 + relaxed accelerations",
+              "description": "Flat easy running, then 6 x 20s relaxed strides on flat grass/track with full walk-back recovery. Strides are about smooth turnover, not sprinting. Skip the strides if the groin is talking.",
+              "humanReadable": "8 km easy + 6x20s strides (flat, full recovery)."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-26",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w4-sun-0",
+              "completed": false,
+              "sport": "run",
+              "type": "long",
+              "name": "Long run 12 km",
+              "distanceMeters": 12000,
+              "durationMinutes": 65,
+              "primaryZone": "Z2 (HR 143-157)",
+              "description": "Steady aerobic long run on flat, even ground. Keep it easy the whole way for now; no surges. This is the session that loads the tissue most, so it is the truest test of readiness.",
+              "humanReadable": "12 km easy long run, flat."
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 3.96,
+        "bySport": {
+          "run": {
+            "sessions": 5,
+            "hours": 3.96,
+            "km": 44
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 5,
+      "startDate": "2026-07-27",
+      "endDate": "2026-08-02",
+      "phase": "Re-entry to quality",
+      "focus": "First structured threshold of the block, conditional on a silent groin. Long run extends.",
+      "targetHours": 5.76,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-07-27",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w5-mon-0",
+              "completed": false,
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest",
+              "description": "Full rest. Walking is fine. Daily adductor isometrics: ball/fist between knees, 5x30s submaximal squeezes. Use these as your gauge: if a squeeze provokes more than a dull 2/10, the tissue is not ready to progress."
+            },
+            {
+              "id": "w5-mon-1",
+              "completed": false,
+              "sport": "strength",
+              "type": "strength",
+              "name": "Strength (C)",
+              "durationMinutes": 30,
+              "primaryZone": "Strength",
+              "description": "Strength C: long-lever Copenhagen adductor 3x8/side | single-leg Romanian deadlift 3x8/side | plank + side plank ladder | hip airplanes 3x6/side | calf raises 3x20. Optional Nordic curls if hamstrings are happy. The Copenhagen progression is the single most evidence-based lever for groin/adductor tolerance; load it gradually and never into pain.",
+              "humanReadable": "Strength C: long-lever Copenhagen adductor 3x8/side | single-leg Romanian deadlift 3x8/side | plank + side plank ladder | hip airplanes 3x6/side | calf raises 3x20. Optional Nordic curls if hamstrings are happy."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-28",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w5-tue-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 10 km + strides",
+              "distanceMeters": 10000,
+              "durationMinutes": 59,
+              "primaryZone": "Z1-2 + relaxed accelerations",
+              "description": "Flat easy running, then 6 x 20s relaxed strides on flat grass/track with full walk-back recovery. Strides are about smooth turnover, not sprinting. Skip the strides if the groin is talking.",
+              "humanReadable": "10 km easy + 6x20s strides (flat, full recovery)."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-29",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w5-wed-0",
+              "completed": false,
+              "sport": "run",
+              "type": "threshold",
+              "name": "Threshold session (conditional)",
+              "distanceMeters": 12000,
+              "durationMinutes": 60,
+              "primaryZone": "Z4-5a (T pace ~3:48/km)",
+              "description": "This is the milestone session. 15 min easy WU, then 4 x 5 min at threshold (~3:48/km, \"comfortably hard\", HR ~177-181) with 90s easy jog between, 10 min easy CD. CONDITIONAL: run this only if the groin has been silent under easy load all week. If there is any doubt, swap it for an easy 10 km. This is your first real loading of the area at speed, so be honest with yourself.",
+              "humanReadable": "WU 15min easy | 4x5min @ T (3:48/km), 90s jog | CD 10min. Only if symptom-free all week, else easy 10km."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-30",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w5-thu-0",
+              "completed": false,
+              "sport": "run",
+              "type": "recovery",
+              "name": "Recovery 8 km",
+              "distanceMeters": 8000,
+              "durationMinutes": 46,
+              "primaryZone": "Z1 (HR < 143)",
+              "description": "Genuinely slow recovery jog the day after quality. Slower than easy pace, HR under 143.",
+              "humanReadable": "8 km very easy recovery."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-31",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w5-fri-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 10 km",
+              "distanceMeters": 10000,
+              "durationMinutes": 54,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km).",
+              "humanReadable": "10 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            },
+            {
+              "id": "w5-fri-1",
+              "completed": false,
+              "sport": "strength",
+              "type": "strength",
+              "name": "Strength (C)",
+              "durationMinutes": 30,
+              "primaryZone": "Strength",
+              "description": "Strength C: long-lever Copenhagen adductor 3x8/side | single-leg Romanian deadlift 3x8/side | plank + side plank ladder | hip airplanes 3x6/side | calf raises 3x20. Optional Nordic curls if hamstrings are happy. The Copenhagen progression is the single most evidence-based lever for groin/adductor tolerance; load it gradually and never into pain.",
+              "humanReadable": "Strength C: long-lever Copenhagen adductor 3x8/side | single-leg Romanian deadlift 3x8/side | plank + side plank ladder | hip airplanes 3x6/side | calf raises 3x20. Optional Nordic curls if hamstrings are happy."
+            }
+          ]
+        },
+        {
+          "date": "2026-08-01",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w5-sat-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 8 km + strides",
+              "distanceMeters": 8000,
+              "durationMinutes": 48,
+              "primaryZone": "Z1-2 + relaxed accelerations",
+              "description": "Flat easy running, then 6 x 20s relaxed strides on flat grass/track with full walk-back recovery. Strides are about smooth turnover, not sprinting. Skip the strides if the groin is talking.",
+              "humanReadable": "8 km easy + 6x20s strides (flat, full recovery)."
+            }
+          ]
+        },
+        {
+          "date": "2026-08-02",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w5-sun-0",
+              "completed": false,
+              "sport": "run",
+              "type": "long",
+              "name": "Long run 16 km",
+              "distanceMeters": 16000,
+              "durationMinutes": 86,
+              "primaryZone": "Z2 (HR 143-157)",
+              "description": "Steady aerobic long run on flat, even ground. Keep it easy the whole way for now; no surges. This is the session that loads the tissue most, so it is the truest test of readiness.",
+              "humanReadable": "16 km easy long run, flat."
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.76,
+        "bySport": {
+          "run": {
+            "sessions": 6,
+            "hours": 5.76,
+            "km": 64
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 6,
+      "startDate": "2026-08-03",
+      "endDate": "2026-08-09",
+      "phase": "Re-entry to quality",
+      "focus": "Approach normal training load. One session, a 19-20 km long run, then reassess and choose a target.",
+      "targetHours": 6.75,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-08-03",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w6-mon-0",
+              "completed": false,
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest",
+              "description": "Full rest. Walking is fine. Daily adductor isometrics: ball/fist between knees, 5x30s submaximal squeezes. Use these as your gauge: if a squeeze provokes more than a dull 2/10, the tissue is not ready to progress."
+            },
+            {
+              "id": "w6-mon-1",
+              "completed": false,
+              "sport": "strength",
+              "type": "strength",
+              "name": "Strength (C)",
+              "durationMinutes": 30,
+              "primaryZone": "Strength",
+              "description": "Strength C: long-lever Copenhagen adductor 3x8/side | single-leg Romanian deadlift 3x8/side | plank + side plank ladder | hip airplanes 3x6/side | calf raises 3x20. Optional Nordic curls if hamstrings are happy. The Copenhagen progression is the single most evidence-based lever for groin/adductor tolerance; load it gradually and never into pain.",
+              "humanReadable": "Strength C: long-lever Copenhagen adductor 3x8/side | single-leg Romanian deadlift 3x8/side | plank + side plank ladder | hip airplanes 3x6/side | calf raises 3x20. Optional Nordic curls if hamstrings are happy."
+            }
+          ]
+        },
+        {
+          "date": "2026-08-04",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w6-tue-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 12 km + strides",
+              "distanceMeters": 12000,
+              "durationMinutes": 70,
+              "primaryZone": "Z1-2 + relaxed accelerations",
+              "description": "Flat easy running, then 6 x 20s relaxed strides on flat grass/track with full walk-back recovery. Strides are about smooth turnover, not sprinting. Skip the strides if the groin is talking.",
+              "humanReadable": "12 km easy + 6x20s strides (flat, full recovery)."
+            }
+          ]
+        },
+        {
+          "date": "2026-08-05",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w6-wed-0",
+              "completed": false,
+              "sport": "run",
+              "type": "threshold",
+              "name": "Cruise intervals",
+              "distanceMeters": 14000,
+              "durationMinutes": 68,
+              "primaryZone": "Z4-5a (T pace ~3:48/km)",
+              "description": "15 min easy WU, then 5 x 1 km at threshold (~3:48/km) with 75s easy jog, 10 min easy CD. Same rule as last week: full session only if the area is quiet. By now turnover should feel close to normal.",
+              "humanReadable": "WU 15min | 5x1km @ T (3:48/km), 75s jog | CD 10min."
+            }
+          ]
+        },
+        {
+          "date": "2026-08-06",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w6-thu-0",
+              "completed": false,
+              "sport": "run",
+              "type": "recovery",
+              "name": "Recovery 10 km",
+              "distanceMeters": 10000,
+              "durationMinutes": 58,
+              "primaryZone": "Z1 (HR < 143)",
+              "description": "Genuinely slow recovery jog the day after quality. Slower than easy pace, HR under 143.",
+              "humanReadable": "10 km very easy recovery."
+            }
+          ]
+        },
+        {
+          "date": "2026-08-07",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w6-fri-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 11 km",
+              "distanceMeters": 11000,
+              "durationMinutes": 59,
+              "primaryZone": "Z1-2 (HR < 150)",
+              "description": "Flat, even ground. Conversational throughout (HR under ~150, ~4:50-5:15/km).",
+              "humanReadable": "11 km easy on flat ground. If anything above 2/10 appears in the groin, stop and walk home."
+            },
+            {
+              "id": "w6-fri-1",
+              "completed": false,
+              "sport": "strength",
+              "type": "strength",
+              "name": "Strength (C)",
+              "durationMinutes": 30,
+              "primaryZone": "Strength",
+              "description": "Strength C: long-lever Copenhagen adductor 3x8/side | single-leg Romanian deadlift 3x8/side | plank + side plank ladder | hip airplanes 3x6/side | calf raises 3x20. Optional Nordic curls if hamstrings are happy. The Copenhagen progression is the single most evidence-based lever for groin/adductor tolerance; load it gradually and never into pain.",
+              "humanReadable": "Strength C: long-lever Copenhagen adductor 3x8/side | single-leg Romanian deadlift 3x8/side | plank + side plank ladder | hip airplanes 3x6/side | calf raises 3x20. Optional Nordic curls if hamstrings are happy."
+            }
+          ]
+        },
+        {
+          "date": "2026-08-08",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w6-sat-0",
+              "completed": false,
+              "sport": "run",
+              "type": "aerobic",
+              "name": "Easy 9 km + strides",
+              "distanceMeters": 9000,
+              "durationMinutes": 54,
+              "primaryZone": "Z1-2 + relaxed accelerations",
+              "description": "Flat easy running, then 6 x 20s relaxed strides on flat grass/track with full walk-back recovery. Strides are about smooth turnover, not sprinting. Skip the strides if the groin is talking.",
+              "humanReadable": "9 km easy + 6x20s strides (flat, full recovery)."
+            }
+          ]
+        },
+        {
+          "date": "2026-08-09",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w6-sun-0",
+              "completed": false,
+              "sport": "run",
+              "type": "long",
+              "name": "Long run 19 km",
+              "distanceMeters": 19000,
+              "durationMinutes": 103,
+              "primaryZone": "Z2 (HR 143-157)",
+              "description": "Steady aerobic long run on flat, even ground. Keep it easy the whole way for now; no surges. This is the session that loads the tissue most, so it is the truest test of readiness.",
+              "humanReadable": "19 km easy long run, flat."
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 6.75,
+        "bySport": {
+          "run": {
+            "sessions": 6,
+            "hours": 6.75,
+            "km": 75
+          }
+        }
+      }
+    }
+  ],
+  "raceStrategy": {
+    "event": {
+      "name": "End-of-block reassessment (not a race)",
+      "date": "2026-08-09",
+      "type": "return-to-run"
+    },
+    "governanceRules": {
+      "painRule": "The 24-hour rule. Acceptable = groin at or below 2/10 during a run, settling within 24h, no worse the next morning. If pain exceeds 2/10, worsens during a run, or is worse the following morning: do not progress. Repeat the previous week or drop a level.",
+      "redFlags": "Stop and seek physio review for sharp/stabbing groin pain, pain that changes your gait, pain waking you at night, or any pain on coughing/sneezing or single-leg hopping.",
+      "progression": "Volume targets are intentions, not commitments. The calendar does not advance the plan; the absence of symptoms does. A quiet week earns the next step up; a reactive week repeats.",
+      "surfaces": "Flat, even ground only through week 4 (avoid camber, hills, trail). Reintroduce gentle undulation from week 5 if symptom-free.",
+      "football": "No football until you are running full volume completely pain-free. It is the highest-risk activity for this injury."
+    },
+    "nextSteps": "If week 6 is clean, you are back to ~85 km with a session and a 19 km long run. That is the point to choose a target (autumn 5K/10K sharpener, or a marathon build toward Yorkshire) and switch from this reload into a specific block."
+  }
+}

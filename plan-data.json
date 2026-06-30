@@ -1,9 +1,9 @@
 {
   "version": "1.0",
   "meta": {
-    "id": "btr-return-to-run-2026",
-    "athlete": "Byron Walker-Mills",
-    "event": "Return-to-Run Reload Block (post pubic symphysis)",
+    "id": "rtr-reload-2026",
+    "athlete": "Athlete",
+    "event": "Return-to-Run Reload Block",
     "eventDate": "2026-08-09",
     "planStartDate": "2026-06-29",
     "planEndDate": "2026-08-09",
@@ -36,7 +36,7 @@
       "longestSessions": {
         "run": 30
       },
-      "consistency": "High base (≈87 km/wk avg over 12 months, 4,538 km / 513 runs), broken by ~3-4 weeks of disrupted training in June around the symphysis injury and the RSR."
+      "consistency": "High base (≈87 km/wk avg over 12 months, 4,538 km / 513 runs), broken by ~3-4 weeks of disrupted training in June around the groin injury and the RSR."
     },
     "strengths": [
       {
@@ -47,7 +47,7 @@
     "limiters": [
       {
         "sport": "run",
-        "evidence": "Left adductor / pubic symphysis tissue tolerance lags cardiovascular readiness; no cross-training to offload it."
+        "evidence": "Left adductor / groin tissue tolerance lags cardiovascular readiness; no cross-training to offload it."
       }
     ],
     "constraints": [
@@ -129,7 +129,7 @@
         "Daily adductor isometrics"
       ],
       "physiologicalGoals": [
-        "Confirm symphysis tolerates easy load",
+        "Confirm groin tolerates easy load",
         "Re-establish running rhythm without flaring tissue"
       ]
     },

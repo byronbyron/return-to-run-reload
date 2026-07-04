@@ -72,10 +72,6 @@
   .thesis strong{font-weight:800;letter-spacing:-.01em}
   .thesis .sub{font-family:var(--mono);font-size:12px;color:var(--thesis-sub)}
   .thesis-right{display:flex;align-items:center;gap:12px}
-  .save{font-family:var(--mono);font-size:12px;color:var(--thesis-sub)}
-  .save[data-state="saving"]{color:#F0C690}
-  .save[data-state="saved"]{color:#7FCBA0}
-  .save[data-state="error"]{color:#E79B9B}
 
   header.top{margin:calc(var(--sp)) 0 6px}
   header.top h1{font-size:clamp(27px,4.6vw,42px);line-height:1.04;margin:.2em 0 0;letter-spacing:-.022em;font-weight:800}
@@ -184,36 +180,6 @@
   .dmw.rest .dmw-iso{font-size:13px;color:var(--muted);margin-top:4px}
 
   footer{margin:34px 0 64px;color:var(--muted);font-size:12.5px;font-family:var(--mono)}
-  footer button{font-family:var(--mono);font-size:12px;background:none;border:1px solid var(--line2);
-    border-radius:7px;padding:7px 11px;color:var(--ink);cursor:pointer;margin-right:8px}
-  footer button:hover{border-color:var(--ink)}
-  .ok{color:var(--green)}
-
-  /* gate / setup */
-  .gate{max-width:580px;margin:6vh auto;padding:var(--sp)}
-  .gate-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
-  .gate h1{font-size:clamp(25px,4vw,36px);font-weight:800;letter-spacing:-.02em;margin:.2em 0}
-  .gate p{color:var(--muted)}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:18px}
-  .field{margin:15px 0}
-  .field label{display:block;font-weight:700;font-size:14px;margin-bottom:6px}
-  .field input[type=text],.field input[type=password]{width:100%;padding:11px 12px;border:1px solid var(--line2);
-    border-radius:9px;font-family:var(--mono);font-size:13px;background:var(--input-bg);color:var(--ink)}
-  .field input::placeholder{color:var(--faint)}
-  .field input[type=file]{font-size:13px;color:var(--muted)}
-  .field .hint{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.5}
-  .btn{background:var(--ink);color:var(--bg);border:none;border-radius:9px;padding:12px 17px;font-weight:800;
-    font-size:14px;cursor:pointer}
-  .btn:disabled{opacity:.5;cursor:default}
-  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-  .seg{display:flex;border:1px solid var(--line2);border-radius:9px;overflow:hidden;margin:4px 0 4px}
-  .seg button{flex:1;background:transparent;border:none;padding:10px;font-weight:600;cursor:pointer;font-size:13px;color:var(--muted)}
-  .seg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
-  .err{background:var(--amber-dim);border:1px solid var(--amber);color:var(--amber-soft);
-    padding:10px 12px;border-radius:9px;font-size:13.5px;margin-top:12px}
-  .steps{font-size:13.5px;color:var(--muted);padding-left:18px}
-  .steps li{margin:7px 0}
-  code{font-family:var(--mono);background:var(--input-bg);border:1px solid var(--line);padding:1px 5px;border-radius:5px;font-size:.9em;color:var(--ink)}
 
   @media (max-width:760px){
     #cal-head{display:none}
@@ -225,9 +191,3 @@
     .cell.restday .cbody{justify-content:flex-start}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
-
-/* ---- app-specific additions (login screen, states) ---- */
-.center-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:var(--sp)}
-.state-msg{color:var(--muted);font-family:var(--mono);font-size:13.5px;text-align:center}
-.state-msg.err{color:var(--amber-soft)}
-form.login-form{width:100%;max-width:420px}

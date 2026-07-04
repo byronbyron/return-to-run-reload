@@ -1,7 +1,17 @@
 "use client";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
+import plan from "../plan-data.json";
+
+const PROGRESS_KEY = "rtr.progress";
+
+function readProgress() {
+  try {
+    return JSON.parse(localStorage.getItem(PROGRESS_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
 
 function isRestW(w) {
   return w.sport === "rest" || w.type === "rest";
@@ -45,86 +55,31 @@ function fmtRange(a, b) {
 }
 
 export default function Dashboard() {
-  const router = useRouter();
-  const [plan, setPlan] = useState(null);
   const [progress, setProgress] = useState({});
-  const [loadError, setLoadError] = useState("");
-  const [saveState, setSaveState] = useState("idle"); // idle | saving | saved | error
   const [openDay, setOpenDay] = useState(null);
-  const saveTimer = useRef(null);
-  const dirtyRef = useRef(false);
-  const progressRef = useRef({});
-  progressRef.current = progress;
 
-  const load = useCallback(async () => {
-    setLoadError("");
-    try {
-      const r = await fetch("/api/data", { cache: "no-store" });
-      if (r.status === 401) {
-        router.replace("/login");
-        return;
-      }
-      const j = await r.json();
-      if (!r.ok) throw new Error(j.error || `Failed to load (${r.status}).`);
-      setPlan(j.plan);
-      setProgress(j.progress || {});
-    } catch (e) {
-      setLoadError(String(e.message || e));
-    }
-  }, [router]);
-
+  // Progress lives in localStorage; read it after mount so the server-rendered
+  // HTML (which can't know it) matches the first client render.
   useEffect(() => {
-    load();
-  }, [load]);
+    setProgress(readProgress());
 
-  useEffect(() => {
-    function onVisible() {
-      if (!document.hidden && !dirtyRef.current) load();
+    function onStorage(e) {
+      if (e.key === PROGRESS_KEY) setProgress(readProgress());
     }
-    document.addEventListener("visibilitychange", onVisible);
-    window.addEventListener("focus", onVisible);
-    return () => {
-      document.removeEventListener("visibilitychange", onVisible);
-      window.removeEventListener("focus", onVisible);
-    };
-  }, [load]);
-
-  const pushProgress = useCallback(async () => {
-    setSaveState("saving");
-    try {
-      const r = await fetch("/api/data", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ progress: progressRef.current }),
-      });
-      if (!r.ok) throw new Error();
-      dirtyRef.current = false;
-      setSaveState("saved");
-    } catch {
-      setSaveState("error");
-    }
+    window.addEventListener("storage", onStorage);
+    return () => window.removeEventListener("storage", onStorage);
   }, []);
-
-  function queueSave() {
-    dirtyRef.current = true;
-    setSaveState("saving");
-    clearTimeout(saveTimer.current);
-    saveTimer.current = setTimeout(pushProgress, 1100);
-  }
 
   function toggle(id, on) {
     setProgress((prev) => {
       const next = { ...prev };
       if (on) next[id] = true;
       else delete next[id];
+      try {
+        localStorage.setItem(PROGRESS_KEY, JSON.stringify(next));
+      } catch {}
       return next;
     });
-    queueSave();
-  }
-
-  async function logout() {
-    await fetch("/api/logout", { method: "POST" });
-    router.replace("/login");
   }
 
   const counts = useMemo(() => {
@@ -142,28 +97,6 @@ export default function Dashboard() {
     );
     return { total, done };
   }, [plan, progress]);
-
-  if (loadError) {
-    return (
-      <div className="center-screen">
-        <div className="state-msg err" style={{ maxWidth: 480 }}>
-          Couldn&rsquo;t load your plan: {loadError}
-          <div style={{ marginTop: 14 }}>
-            <button className="btn" onClick={load}>
-              Try again
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-  if (!plan) {
-    return (
-      <div className="center-screen">
-        <div className="state-msg">Loading your plan…</div>
-      </div>
-    );
-  }
 
   const gov = plan.raceStrategy?.governanceRules || {};
   const govOrder = [
@@ -186,9 +119,6 @@ export default function Dashboard() {
             <span className="sub">a quiet week earns the next step; a reactive week repeats</span>
           </div>
           <div className="thesis-right">
-            <div className="save" data-state={saveState}>
-              {saveState === "saving" ? "Saving…" : saveState === "saved" ? "Saved" : saveState === "error" ? "Save failed — will retry on next change" : ""}
-            </div>
             <ThemeToggle />
           </div>
         </div>
@@ -242,20 +172,24 @@ export default function Dashboard() {
                       <p style={{ fontFamily: "var(--mono)", fontSize: 12 }}>LTHR ≈ {zones.hr.lthr} bpm</p>
                     ) : null}
                     <table className="zones">
-                      <tr>
-                        <th>Z</th>
-                        <th>Name</th>
-                        <th>HR</th>
-                      </tr>
-                      {zones.hr.zones.map((z) => (
-                        <tr key={z.zone}>
-                          <td className="n">{z.zone}</td>
-                          <td>{z.name}</td>
-                          <td className="n">
-                            {z.hrLow}–{z.hrHigh}
-                          </td>
+                      <thead>
+                        <tr>
+                          <th>Z</th>
+                          <th>Name</th>
+                          <th>HR</th>
                         </tr>
-                      ))}
+                      </thead>
+                      <tbody>
+                        {zones.hr.zones.map((z) => (
+                          <tr key={z.zone}>
+                            <td className="n">{z.zone}</td>
+                            <td>{z.name}</td>
+                            <td className="n">
+                              {z.hrLow}–{z.hrHigh}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
                     </table>
                   </>
                 ) : null}
@@ -367,11 +301,7 @@ export default function Dashboard() {
         })}
 
         <footer>
-          <div className="row" style={{ marginBottom: 10 }}>
-            <button onClick={load}>Refresh from other devices</button>
-            <button onClick={logout}>Log out of this device</button>
-          </div>
-          <div>Plan and progress live in your private data repo. This app never sends your GitHub token to the browser.</div>
+          <div>Progress is saved in this browser. Ticks don&rsquo;t sync between devices.</div>
         </footer>
       </div>
 
